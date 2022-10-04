@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
-
+using System.Web.UI;
 
 namespace BlockchainBasedVotingSystem
 {
@@ -10,7 +10,7 @@ namespace BlockchainBasedVotingSystem
         conn ConnC = new conn();
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            nametxt.Focus();
 
         }
         String cs = ConfigurationManager.ConnectionStrings["dbcs"].ConnectionString;
@@ -43,8 +43,12 @@ namespace BlockchainBasedVotingSystem
             {
                 if (ConnC.ExecuteQuery(Query))
                 {
-                    //ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You have successfully registered..');", true);
-                    this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal('Sign up Sucessfully!', '', 'success');", true);
+                   
+                   //ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You have successfully registered..');", true);
+                 
+                    //Response.Redirect("Login.aspx");
+
+                    this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal(' successfully Signup!', '', 'success');", true);
 
                     // Session["Cnic"] = cnictxt.Text;
 
@@ -59,9 +63,6 @@ namespace BlockchainBasedVotingSystem
                 //ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Alert!! Failed to registered Email Already Exist..');", true);
 
                 this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal('Email Already Exist!', '', 'error');", true);
-
-
-
 
 
             }

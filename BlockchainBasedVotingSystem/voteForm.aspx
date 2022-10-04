@@ -44,9 +44,6 @@
     <div id="large-header" class="large-header">
        
 
-		
-		
-	
 		<div class="form1">
       <h1 class="Vote-heading">Select Your Party</h1>
             <div class="container animate__animated animate__fadeInLeft">
@@ -171,7 +168,7 @@
      
 
       </div>
-        <%-- MODAL --%>
+        <%--PTI MODAL --%>
 
       <div class="modal fade" id="exampleModal" tabindex="0" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -220,7 +217,7 @@
              
                 <asp:TextBox ID="pppcnictxt" ReadOnly="true" runat="server"></asp:TextBox>
               <br>
-              2
+              
               
 
             </div>
@@ -254,7 +251,7 @@
               <%--<input type="cnictxt" class="modal-input">--%>
                 <asp:TextBox ID="jpicnictxt" ReadOnly="true" runat="server"></asp:TextBox>
               <br>
-              3
+              
               <%--<input type="" class="modal-input">--%>
 
             </div>
@@ -287,7 +284,7 @@
               <%--<input type="cnictxt" class="modal-input">--%>
                 <asp:TextBox ID="pspcnictxt" ReadOnly="true" runat="server"></asp:TextBox>
               <br>
-              4
+              
               <%--<input type="" class="modal-input">--%>
 
             </div>
@@ -320,7 +317,7 @@
               <%--<input type="cnictxt" class="modal-input">--%>
                 <asp:TextBox ID="anpcnictxt" ReadOnly="true" runat="server"></asp:TextBox>
               <br>
-             5
+             
               <%--<input type="" class="modal-input">--%>
 
             </div>
@@ -352,7 +349,7 @@
               <%--<input type="cnictxt" class="modal-input">--%>
                 <asp:TextBox ID="mqmCnictxt" ReadOnly="true" runat="server"></asp:TextBox>
               <br>
-             6
+             
               <%--<input type="" class="modal-input">--%>
 
             </div>
@@ -383,7 +380,7 @@
               <%--<input type="cnictxt" class="modal-input">--%>
                 <asp:TextBox ID="Juicnictxt" ReadOnly="true" runat="server"></asp:TextBox>
               <br>
-              7
+              
               <%--<input type="" class="modal-input">--%>
 
             </div>
@@ -414,7 +411,7 @@
               <%--<input type="cnictxt" class="modal-input">--%>
                 <asp:TextBox ID="Tlpcnictxt" ReadOnly="true" runat="server"></asp:TextBox>
               <br>
-              8
+              
               <%--<input type="" class="modal-input">--%>
 
             </div>
@@ -444,7 +441,6 @@
              
                 <asp:TextBox ID="pmlnCnictxt" ReadOnly="true" runat="server"></asp:TextBox>
               <br>
-              9
              
 
             </div>

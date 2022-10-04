@@ -53,8 +53,9 @@
             <br />
             <br />
              <label class="Sub-heading" >Cnic</label>
-            <asp:TextBox ID="cnictext" runat="server"></asp:TextBox>
-
+            <asp:TextBox ID="cnictext" MaxLength="13" TextMode="SingleLine"  runat="server" ></asp:TextBox>
+            <br />
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ForeColor="Red" ControlToValidate="cnictext" ErrorMessage="Cnic required"></asp:RequiredFieldValidator>
 			   <div class="btn"><a href="#">
                    <br />
                    <asp:Button ID="button1" class="button" runat="server" Text="Login" OnClick="button1_Click" /></a> </div>
