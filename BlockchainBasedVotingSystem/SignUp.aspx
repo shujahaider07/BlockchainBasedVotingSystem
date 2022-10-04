@@ -52,7 +52,7 @@
         <br>
 		
 				<label class="Sub-heading" >Email</label> 
-            <asp:TextBox ID="emailtxt" runat="server"></asp:TextBox>
+            <asp:TextBox ID="emailtxt" TextMode="Email" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ForeColor="Red" runat="server" ControlToValidate="emailtxt" ErrorMessage="Email is Required"></asp:RequiredFieldValidator>
         <br>
            

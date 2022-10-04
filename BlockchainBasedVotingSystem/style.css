@@ -8,9 +8,12 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 1;
+    margin-top: 1%;
 }
+
 body{
-    
+    margin: 0%;
+    padding: 0%;
     background-color: #f2f2f2;
 }
 .half-box{
@@ -19,6 +22,26 @@ body{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     
+}
+.card{
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    height: 320px;
+}
+img.card-img-top {
+    height: 200px;
+    object-fit: fill;
+}
+.card:hover{
+    transition: .5s ease-in-out;
+    transform: translateY(-10px);
+}
+.modal-backdrop{
+    position: relative;
+    background: transparent;
+}
+.modal-content button.btn.btn-secondary{
+    margin-top: 0%;
 }
 .login{
     float: inline-end;
@@ -147,6 +170,12 @@ padding-bottom: 5%;
 font-size: 18px;
 font-weight: bold;
 margin-bottom: 5%;
+}
+@media screen and (max-width:768px) {
+    .card{
+        height: 320px;
+    }
+    
 }
 /* login Responsive */
 @media only screen and (max-width: 780px) {
@@ -853,6 +882,43 @@ margin-left: 5%;
         margin-left: 20%;
     }
 }
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+     font-family: 'Bebas Neue', cursive;
+     width: 100%;
+     color: white;
+     font-size: 20px;
+     height: 50px;
+     background-color:#154983;
+     
+   
+ }
+ .card-body{
+    font-family: 'Poppins', sans-serif;
+ }
+ .navbar{
+    width: 100% !important;
+    background-color:#154983;
+ }
+ .logo-quiz{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+ }
+ 
+ .Quiz-heading{
+    margin-left: 1%;
+    display: flex;
+    align-items: center;
+    margin-top: 1% !important;
+ }
+ .btn-primary{
+    background-color: black;
+ }
+ #canvas-demo{
+    margin-top: 20%;
+ }
 .form {
     position: absolute;
     left: 50%;
@@ -861,11 +927,124 @@ margin-left: 5%;
     width: 30%;
     padding: 10px;
 }
+
+.card{
+    margin-top: 5%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-image: url("images/log-bg.png");
+    color: white;
+}
+
+.modal-input{
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.confirm-btn{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+   color: rgb(8, 14, 44);;
+    font-family: 'Poppins', sans-serif;
+}
+.confirm-btn:hover{
+    background-color: black;
+    color: white;
+}
+.modal-content{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background-image: url("images/log-bg.png") !important;
+}
+@media only screen and (max-width: 770px) {
+    .container{
+       margin: 0 auto;
+     }
+  }
+  @media screen and (max-width:768px) {
+    .card {
+        width: 70%;
+        margin: 30px auto;
+    }
+    
+  }
+  @media screen and (max-width:600px) {
+    .card {
+        width: 80%;
+        margin: 30px auto;
+    }
+    
+  }
+  @media screen and (max-width:425px) {
+    .card {
+        width: 100%;
+        margin: 30px auto;
+    }
+    
+  }
+  @media only screen and (max-width: 500px) {
+    .container{
+       margin: 0 auto;
+     }
+  }
+.vote-button{
+    border: none;
+    background-color: white;
+    border-radius:20px;
+    padding: 5px;
+    font-weight:bold;
+    color:  rgb(8, 14, 44);;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    font-family: 'Poppins', sans-serif;
+}
+.vote-heading{
+    
+    font-family: 'Bebas Neue', cursive !important;
+    font-size: 25px !important;
+}
+h1{
+    font-family: 'Bebas Neue', cursive !important;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+.vote-button:hover{
+    background-color: black;
+    color: white;
+}
+.form{
+    background-image:url("images/logo-bg.png");
+    background-size:cover;
+}
+.form1{
+    position: absolute;
+    margin-top: 20%;
+    margin-top: 0%;
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-left: 5%;
+}
+@media only screen and (min-width: 1000px) {
+    .Quiz-heading{
+        margin-top: -0.5%;
+     }
+  }
 @media only screen and (max-width: 950px) {
   .form{
     width: 60%;
 
   }
+}
   @media only screen and (max-width: 700px) {
     .form{
       width: 80%;

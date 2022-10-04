@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Configuration;
 using System.Data.SqlClient;
-using System.Web.UI;
 
 
 namespace BlockchainBasedVotingSystem
@@ -50,6 +49,7 @@ namespace BlockchainBasedVotingSystem
                     // Session["Cnic"] = cnictxt.Text;
 
                     clearData();
+                        
 
                 }
             }
@@ -61,8 +61,8 @@ namespace BlockchainBasedVotingSystem
                 this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal('Email Already Exist!', '', 'error');", true);
 
 
-                
-            
+
+
 
             }
 
@@ -72,7 +72,7 @@ namespace BlockchainBasedVotingSystem
         {
             nametxt.Text = "";
             passwordTxt.Text = "";
-            //cnictxt.Text = "";
+           
             emailtxt.Text = "";
         }
     }

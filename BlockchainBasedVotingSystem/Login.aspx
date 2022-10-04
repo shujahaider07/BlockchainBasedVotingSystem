@@ -1,4 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="BlockchainBasedVotingSystem.Login" %>
+﻿
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="BlockchainBasedVotingSystem.Login" %>
 
 <!DOCTYPE html>
 
@@ -24,6 +25,10 @@
     <script src="https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/TweenLite.min.js"></script>
     <script src="https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/EasePack.min.js"></script>
     <script src="https://tympanus.net/Development/AnimatedHeaderBackgrounds/js/rAF.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.min.css" rel="stylesheet" type="text/css" />
+
 </head>
 <body>
     <form id="form1" runat="server">
@@ -45,10 +50,10 @@
             <asp:TextBox ID="passwordtxt" TextMode="Password" runat="server"></asp:TextBox>
             <%--<input class="input1" type="text" name="username">--%>
 
-           <%-- <br />
+            <br />
             <br />
              <label class="Sub-heading" >Cnic</label>
-            <asp:TextBox ID="cnictext" runat="server"></asp:TextBox>--%>
+            <asp:TextBox ID="cnictext" runat="server"></asp:TextBox>
 
 			   <div class="btn"><a href="#">
                    <br />
