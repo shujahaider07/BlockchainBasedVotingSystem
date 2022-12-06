@@ -11,6 +11,8 @@ namespace BlockchainBasedVotingSystem
         conn ConnC = new conn();
         protected void Page_Load(object sender, EventArgs e)
         {
+
+         
             try
             {
 

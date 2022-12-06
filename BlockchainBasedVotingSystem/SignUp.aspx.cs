@@ -33,7 +33,7 @@ namespace BlockchainBasedVotingSystem
 
             sql.Open();
 
-            string Query = "insert into registration_tbl (NAME , EMAIL  , GENDER , PASSWORD) Values('" + nametxt.Text + "' ,  '" + emailtxt.Text + "' , '" + DropDownList1.Text + "' , '" + passwordTxt.Text + "' )";
+            string Query = "insert into registration_tbl (NAME , EMAIL ,PASSWORD) Values('" + nametxt.Text + "' ,  '" + emailtxt.Text + "' , '" + passwordTxt.Text + "')";
 
 
 
@@ -43,9 +43,9 @@ namespace BlockchainBasedVotingSystem
             {
                 if (ConnC.ExecuteQuery(Query))
                 {
-                   
-                   //ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You have successfully registered..');", true);
-                 
+
+                    //ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You have successfully registered..');", true);
+
                     //Response.Redirect("Login.aspx");
 
                     this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal(' successfully Signup!', '', 'success');", true);
@@ -53,7 +53,7 @@ namespace BlockchainBasedVotingSystem
                     // Session["Cnic"] = cnictxt.Text;
 
                     clearData();
-                        
+
 
                 }
             }
@@ -73,7 +73,6 @@ namespace BlockchainBasedVotingSystem
         {
             nametxt.Text = "";
             passwordTxt.Text = "";
-           
             emailtxt.Text = "";
         }
     }
