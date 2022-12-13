@@ -67,9 +67,11 @@ namespace BlockchainBasedVotingSystem
                 {
                     this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal('Congratulations!! Your Vote has been Registered!', '', 'success');", true);
 
-                   // ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You Vote has been Registered ');", true);
+                    // ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You Vote has been Registered ');", true);
 
                     //Response.Redirect("signup.aspx");
+
+                    Response.Redirect("login.aspx");
 
                 }
             }
@@ -97,6 +99,9 @@ namespace BlockchainBasedVotingSystem
                     
                     this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal('Congratulations!! Your Vote has been Registered!', '', 'success');", true);
 
+
+                    Response.Redirect("login.aspx");
+
                 }
             }
             else
@@ -122,6 +127,9 @@ namespace BlockchainBasedVotingSystem
                     /// ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You Vote has been Registered ');", true);
 
                     // Response.Redirect("signup.aspx");
+
+
+                    Response.Redirect("login.aspx");
                 }
             }
             else
@@ -152,6 +160,8 @@ namespace BlockchainBasedVotingSystem
 
                     // Response.Redirect("signup.aspx");
 
+
+                    Response.Redirect("login.aspx");
                 }
             }
             else
@@ -182,7 +192,10 @@ namespace BlockchainBasedVotingSystem
                     this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal('Congratulations!! Your Vote has been Registered!', '', 'success');", true);
                     //ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You Vote has been Registered ');", true);
 
-                    Response.Redirect("signup.aspx");
+                    //  Response.Redirect("signup.aspx");
+
+
+                    Response.Redirect("login.aspx");
 
                 }
             }
@@ -211,6 +224,8 @@ namespace BlockchainBasedVotingSystem
                     this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal('Congratulations!! Your Vote has been Registered!', '', 'success');", true);
                     // ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You Vote has been Registered ');", true);
 
+
+                    Response.Redirect("login.aspx");
                     //Response.Redirect("signup.aspx");
                 }
             }
@@ -239,6 +254,7 @@ namespace BlockchainBasedVotingSystem
                     //   ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You Vote has been Registered ');", true);
 
 
+                    Response.Redirect("login.aspx");
                 }
             }
             else
@@ -268,6 +284,7 @@ namespace BlockchainBasedVotingSystem
                     //ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You Vote has been Registered ');", true);
 
 
+                    Response.Redirect("login.aspx");
 
                 }
             }
@@ -291,10 +308,18 @@ namespace BlockchainBasedVotingSystem
             {
                 if (ConnC.ExecuteQuery(Query) && ConnC.ExecuteQuery(QueryWithHash))
                 {
-                    this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal('Congratulations!! Your Vote has been Registered!', '', 'success');", true);
+                    if (Query !=null)
+                    {
+                        //this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal('Congratulations!! Your Vote has been Registered!', '', 'success');", true);
+
+                        this.ClientScript.RegisterStartupScript(this.GetType(), "SweetAlert", "swal('Your Vote has been Registered!', '', 'success!', '', 'error');", true);
+
+                    }
+
 
                     //ScriptManager.RegisterStartupScript(this, GetType(), "Message", "alert('Congratulations!! You Vote has been Registered ');", true);
 
+                    Response.Redirect("login.aspx");
 
                 }
             }

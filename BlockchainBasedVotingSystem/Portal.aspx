@@ -9,6 +9,7 @@
         .auto-style1 {
             width: 100%;
         }
+
         .auto-style2 {
             width: 351px;
         }
@@ -16,7 +17,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        
+
         <table class="auto-style1">
             <tr>
                 <td class="auto-style2">NAME</td>
@@ -37,7 +38,7 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
-        
+
     </form>
 </body>
 </html>

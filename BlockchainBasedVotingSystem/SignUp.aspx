@@ -41,7 +41,8 @@
 
                 <div class="login">
                     <div style="margin: 0 auto; width: 100%;">
-                        <img src="images/election-removebg-preview.png" style="text-align: center;" width="100%"></div>
+                        <img src="images/election-removebg-preview.png" style="text-align: center;" width="100%">
+                    </div>
                     <div class="half-box">
                         <p class="heading">Sign Up</p>
 
@@ -57,18 +58,18 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ForeColor="Red" runat="server" ControlToValidate="emailtxt" ErrorMessage="Email is Required"></asp:RequiredFieldValidator>
                         <br>
 
-                        
 
-<%--                        <label class="Sub-heading">Gender</label>
+
+                        <%--                        <label class="Sub-heading">Gender</label>
                         <%--<input class="input1" type="text" name="username">--%>
-                     <%--   <asp:DropDownList ID="DropDownList1" runat="server" Height="26px" Width="189px">
+                        <%--   <asp:DropDownList ID="DropDownList1" runat="server" Height="26px" Width="189px">
                             <asp:ListItem>Select Gender</asp:ListItem>
                             <asp:ListItem>Male</asp:ListItem>
                             <asp:ListItem>Female</asp:ListItem>
                         </asp:DropDownList>--%>
                         <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DropDownList1" ForeColor="Red" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>--%>
 
-                        
+
 
                         <br>
                         <label class="Sub-heading">Password</label>

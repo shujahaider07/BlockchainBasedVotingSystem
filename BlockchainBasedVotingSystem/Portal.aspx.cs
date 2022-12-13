@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace BlockchainBasedVotingSystem
 {
@@ -26,12 +21,19 @@ namespace BlockchainBasedVotingSystem
                 Session["password"] = TextBox3.Text;
 
                 Response.Redirect("HashTable.aspx");
-               
+
             }
             else
             {
                 Response.Redirect("Login.aspx");
             }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+           
+
+
         }
     }
 }

@@ -5,6 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            margin-top: 0px;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -26,6 +31,11 @@
             <br />
             <br />
         </div __designer:mapid="11">
+
+
+
+                     <asp:Button ID="Button1" runat="server" Height="40px" OnClick="Button1_Click" Text="LOGOUT" Width="84px" />
+                     <asp:Button ID="Button2" runat="server" CssClass="auto-style1" OnClick="Button2_Click" Text="Simple Table" />
 
 
 

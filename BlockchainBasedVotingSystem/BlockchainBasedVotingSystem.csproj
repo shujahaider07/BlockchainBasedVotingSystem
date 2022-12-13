@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Admin.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="HashTable.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Portal.aspx" />
@@ -94,6 +95,13 @@
       <DependentUpon>Admin.aspx</DependentUpon>
     </Compile>
     <Compile Include="conn.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Hash.cs" />
     <Compile Include="HashTable.aspx.cs">
       <DependentUpon>HashTable.aspx</DependentUpon>

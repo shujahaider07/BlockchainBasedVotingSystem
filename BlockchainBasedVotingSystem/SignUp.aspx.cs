@@ -22,6 +22,7 @@ namespace BlockchainBasedVotingSystem
             if (IsPostBack)
             {
                 insertdata();
+                Response.Redirect("Login.aspx");
             }
 
 

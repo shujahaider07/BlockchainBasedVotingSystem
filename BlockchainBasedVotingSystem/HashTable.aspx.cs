@@ -10,6 +10,7 @@ using System.Web.Configuration;
 using System.Web.UI;
 using System.Data;
 using System.Reflection.Emit;
+using System.Web.Caching;
 
 namespace BlockchainBasedVotingSystem
 {
@@ -43,6 +44,26 @@ namespace BlockchainBasedVotingSystem
             GridView1.DataBind();
 
             sql.Close();
+
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            
+            if (Session["username"] !=null)
+            {
+                Session["username"] = null;
+                Session.Clear();
+                Session.RemoveAll();
+                Response.Redirect("Login.aspx");
+            }
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("admin.aspx");
+
+
 
         }
 
